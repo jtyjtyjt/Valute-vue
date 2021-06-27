@@ -1,26 +1,46 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="App">
+    <div class="wrapper">
+      <Daily/>
+    </div>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Daily from '@/components/Daily.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Daily
   }
 }
 </script>
 
 <style>
+html,body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  margin-left: calc(100vw - 100%);
+}
+body{
+  height: 100%;
+  width: 100%;
+  background: #ebfcfa;
+}
+.wrapper{
+  margin: 0 auto;
+  max-width: 1200px;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  width: 100%;
 }
 </style>
