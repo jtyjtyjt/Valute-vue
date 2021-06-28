@@ -72,7 +72,7 @@
 				if(this.leftInput){
 					this.calcResult()
 				}
-				if(this.leftInput == '') return this.rightInput = '';
+				else if(this.leftInput == '') return this.rightInput = '';
 			},
 			calcResult(){
 				if(this.leftInput == '') return this.rightInput = '';
